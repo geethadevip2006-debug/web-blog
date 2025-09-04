@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GeeBee's Blog</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #fdf6f0;
+      color: #333;
+    }
+
+    header {
+      background: #ffb6b9;
+      padding: 20px;
+      text-align: center;
+    }
+
+    nav a {
+      margin: 0 10px;
+      text-decoration: none;
+      color: #fff;
+      font-weight: bold;
+    }
+ main {
+      padding: 20px;
+    }
+
+    .post {
+      background: #fff;
+      padding: 20px;
+      margin-bottom: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    button {
+      display: block;
+      margin: 10px auto;
+      padding: 10px 20px;
+      background-color: #ffb6b9;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;  </style>
+</head>
+<body>
+  <header>
+    <h1>Welcome to GeeBee’s World 🌸</h1>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <button id="toggleBtn">Toggle Post</button>
+    <section class="post" id="blogPost">
+      <h2>My First Blog Post</h2>
+      <p>This is where your thoughts come alive. Write freely, write boldly!</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 GeeBee’s Blog</p>
+  </footer>
+
+  <script>
+    const toggleBtn = document.getElementById("toggleBtn");
+    const blogPost = document.getElementById("blogPost");
+
+    toggleBtn.addEventListener("click", () => {
+      blogPost.style.display = blogPost.style.display === "none" ? "block" : "none";
+    });
+  </script>
+</body>
+</html>
+
+      font-size: 16px;
+    }
+
+    button:hover {
+      background-color: #ff9aa2;
+    }
+
+    footer {
+      text-align: center;
+      padding: 10px;
+      background: #ffe0e0;
+      font-size: 14px;
+    }
